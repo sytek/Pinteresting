@@ -8,7 +8,11 @@ $navbar-height:			45px;
 $navbar-default-bg: 	#43464A;
 $navbar-default-link-color: #E9F0F2; 
 $navbar-default-link-hover-color: #88BAF7; 
-$btn-danger-bg: #084DA3;
+$btn-danger-bg: #084DA3; 
+
+$panel-danger-heading-bg:	#5C9FF2;
+$panel-danger-text:			#FBFFFF;
+
 @import 'bootstrap';
 
 .center {
@@ -17,4 +21,8 @@ $btn-danger-bg: #084DA3;
 
 .navbar-brand {
 	font-weight: bold;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-left: 0;
 }
