@@ -28,7 +28,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    autoprefixer-rails (5.2.1.3)
+    autoprefixer-rails (6.3.1)
       execjs
       json
     bcrypt (3.1.10-x86-mingw32)
@@ -36,6 +36,10 @@ GEM
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
     builder (3.2.2)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -43,7 +47,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-    devise (3.5.2)
+    devise (3.5.6)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -64,9 +68,16 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.99)
+    mimemagic (0.3.0)
     minitest (5.8.4)
     multi_json (1.11.2)
     orm_adapter (0.5.0)
+    paperclip (4.3.3)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
     pg (0.18.4-x86-mingw32)
     rack (1.5.5)
     rack-test (0.6.3)
@@ -84,7 +95,7 @@ GEM
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
-    rails_serve_static_assets (0.0.4)
+    rails_serve_static_assets (0.0.5)
     rails_stdout_logging (0.0.4)
     railties (4.1.8)
       actionpack (= 4.1.8)
@@ -122,12 +133,12 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2015.7)
+    tzinfo-data (1.2016.1)
       tzinfo (>= 1.0.0)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    warden (1.2.3)
+    warden (1.2.6)
       rack (>= 1.0)
 
 PLATFORMS
@@ -139,6 +150,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  paperclip (~> 4.2)
   pg
   rails (= 4.1.8)
   rails_12factor
