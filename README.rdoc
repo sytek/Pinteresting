@@ -1,6 +1,6 @@
 == README
-This is a Pinteresting clone
-
-Added several gems, and stuff.
+This is a Pinteresting clone built on Rails.
 
 Can be found on Heroku
+
+Technologies: Ruby, Ruby on Rails, HTML, CSS, Javascript, Bootstrap
